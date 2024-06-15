@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML and CSS Sandbox</title>
+  <style>
+    html, body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    header{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      background: coral;
+    }
+
+    header h1{
+      padding: 5px;
+      margin-left: 10px;
+      font-weight: bolder;
+    }
+
+    header nav{
+      display: block;
+      width: 100%;
+      background: whitesmoke;
+    }
+     
+    header nav ul{
+      display: flex;
+      padding: 0;
+      margin: 10px;
+    }
+    header nav ul li{
+      list-style: none;
+      padding: 5px;
+    }
+
+    .flex-container{
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+    }
+    .side-tag-l{
+      margin: 20px;
+      flex-grow: 5;
+      flex-basis: 400px;
+    }
+
+    .side-tag-rp{
+      flex-grow: 1;
+      margin: 20px 0 0 40px;
+    }
+
+    .recent-posts{
+      width: 250px;
+      background: whitesmoke;
+    }
+
+    .recent-posts h4{
+      margin: 0;
+      background: coral;
+      padding: 10px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .recent-posts ul{
+      padding: 0;
+      margin: 0;
+      background: whitesmoke;
+    }
+
+    .recent-posts ul li{
+      list-style: none;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+
+    .recent-posts ul li:nth-child(1){
+      border-bottom: 1px solid #80808046;
+    }
+    .recent-posts ul li:nth-child(2){
+      border-bottom: 1px solid #8080806e;
+    }
+    .recent-posts ul li:nth-child(3){
+      border-bottom: 1px solid #8080808a;
+    }
+    .recent-posts ul li:nth-child(4){
+      border-bottom: 1px solid #808080c2;
+    }
+    .recent-posts ul li:nth-child(5){
+      border-bottom: 1px solid #808080;
+      margin-bottom: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Flexbox Layout Challenge</h1>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="flex-container">
+
+        <div class="side-tag-l">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis consectetur rem mollitia sit, ullam quo eos voluptatibus tempore amet in nobis ipsa eius, praesentium nemo doloribus labore error nulla vel, optio libero provident natus beatae reprehenderit. Harum odit quas optio, accusantium fugiat ea mollitia esse reiciendis in quis, voluptates animi corrupti, veniam consequatur labore debitis atque officia deleniti distinctio tempore obcaecati repellat hic officiis qui?<br> <br>
+          Repellat, est consequatur excepturi dicta error aliquid molestias sunt ullam placeat nostrum, distinctio iure consectetur quia, mollitia eius ratione laboriosam. Illo quibusdam reprehenderit iste cumque velit praesentium alias eligendi. Minus temporibus nisi praesentium exercitationem? Laudantium.</p>
+        </div>
+        <div class="side-tag-rp">
+          <div class="recent-posts">
+            <h4>Recent Posts</h4>
+            <ul>
+              <li>Post 1</li>
+              <li>Post 2</li>
+              <li>Post 3</li>
+              <li>Post 4</li>
+              <li>Post 5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
